@@ -1,11 +1,10 @@
 package org.epam.selenium.service;
 
-import java.util.ResourceBundle;
+import org.epam.selenium.model.User;
 
-public class TestDataReader {
-    private static ResourceBundle resourceBundle = ResourceBundle.getBundle(System.getProperty("environment"));
+public interface TestDataReader {
 
-    public static String getTestData(String key){
-        return resourceBundle.getString(key);
-    }
+    User getUser();
+
+    String getPageUrl();
 }

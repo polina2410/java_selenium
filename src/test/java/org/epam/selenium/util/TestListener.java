@@ -1,6 +1,6 @@
 package org.epam.selenium.util;
 
-import org.epam.selenium.driver.DriverSingleton;
+import org.epam.selenium.driver.DriverFactorySingleton;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -48,8 +48,8 @@ public class TestListener implements ITestListener {
     }
 
     private void saveScreenshot(){
-        File screenCapture = ((TakesScreenshot)DriverSingleton
-                .getDriver())
+        File screenCapture = ((TakesScreenshot) DriverFactorySingleton
+                .getInstance())
                 .getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(screenCapture, new File(

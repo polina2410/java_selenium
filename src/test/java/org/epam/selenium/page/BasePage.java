@@ -20,7 +20,6 @@ public abstract class BasePage {
     protected Actions action;
     protected JavascriptExecutor js;
 
-
     protected BasePage(WebDriver driver) {
         this.driver = driver;
         this.action = new Actions(driver);
