@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
 @Listeners({TestListener.class})
-public class BaseTestClass {
+public class BaseClassTest {
     protected WebDriver driver;
     protected static final String receiverEmail = "polinasmekhova@gmail.com";
     protected static final String draftText = "test email text";

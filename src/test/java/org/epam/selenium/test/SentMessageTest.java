@@ -10,7 +10,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertTrue;
 
-public class SentMessageTest extends BaseTestClass {
+public class SentMessageTest extends BaseClassTest {
 
     @Test
     public void checkMessageIsInSentFolder() {

@@ -13,7 +13,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 import static org.testng.Assert.assertFalse;
 
-public class DraftMessageTests extends BaseTestClass {
+public class DraftMessageTest extends BaseClassTest {
 
     @Test
     public void testSubjectOfDraft() {

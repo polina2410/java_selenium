@@ -10,7 +10,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 
-public class UserAccessTests extends BaseTestClass {
+public class UserAccessTests extends BaseClassTest {
 
     protected static final String mainPageURL = "https://mail.yandex.ru/?uid=1729372994#tabs/relevant";
 
